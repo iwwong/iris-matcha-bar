@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iris' Matcha Bar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== GATE ===================== -->
+<section class="gate" id="gate">
+
+  <div class="gate-splash-bg" aria-hidden="true">
+    <canvas id="matchaCanvas"></canvas>
+  </div>
+
+  <div class="gate-card">
+    <div class="gate-stamp">est. for one day only</div>
+
+    <img src="assets/matcha.gif" alt="" class="gate-illustration" aria-hidden="true">
+
+    <h1 class="gate-title">Knock knock</h1>
+    <p class="gate-sub">This café is open by invitation.<br>Enter the password from your invite to come in.</p>
+
+    <form id="gateForm" class="gate-form" autocomplete="off">
+      <input
+        type="text"
+        id="passwordInput"
+        class="gate-input"
+        placeholder="password"
+        aria-label="Password"
+        autocapitalize="off"
+        autocorrect="off"
+        spellcheck="false"
+      >
+      <button type="submit" class="gate-button">Let me in</button>
+    </form>
+    <p class="gate-error" id="gateError">Hmm, that's not quite it &mdash; try again?</p>
+
+    <p class="gate-footnote">Don't have it? Ask Iris.</p>
+  </div>
+</section>
+
+<!-- ===================== SITE ===================== -->
+<main class="site" id="site" hidden>
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="eyebrow">Opening Soon</p>
+    <div class="logo-wrap">
+      <img class="logo-script" src="assets/logo-script-clean.png" alt="">
+      <img class="logo-full" src="assets/logo.png" alt="Iris' Matcha Bar">
+    </div>
+    <p class="hero-tagline">a birthday pop-up café &middot; one day only</p>
+
+    <div class="hero-meta">
+      <div class="hero-meta-row">
+        <span class="hero-meta-label">When</span>
+        <span class="hero-meta-value">Sunday, August 2 &middot; 2:00&nbsp;&ndash;&nbsp;5:00&nbsp;PM</span>
+      </div>
+      <div class="hero-meta-row">
+        <span class="hero-meta-label">Where</span>
+        <span class="hero-meta-value">9060 University Crescent, Burnaby<br><span class="hero-meta-note">Buzz code 2360 &middot; 12th Floor, Unit 1206</span></span>
+      </div>
+      <div class="hero-meta-row">
+        <span class="hero-meta-label">Parking</span>
+        <span class="hero-meta-value">Free street parking on University Crescent.<br><span class="hero-meta-note"> I have 2 visitor passes for underground parking &mdash; first come, first served. If parking underground, building entrance is the door between the 2 gates.</span></span>
+      </div>
+    </div>
+
+    <p> <a href="#rsvp" class="button">
+    <button type="button" class="rsvp-button">RSVP</button>
+  </a></p>
+  </section>
+
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 200 24" class="divider-svg"><path d="M2 12 C 40 2, 60 22, 100 12 S 160 2, 198 12" /></svg>
+  </div>
+
+  <!-- NOTE FROM IRIS -->
+  <section class="note">
+    <div class="matcha-anim">
+      <div class="whisk-rotor">
+        <img src="assets/whisk-cropped.png" alt="" aria-hidden="true">
+      </div>
+      <svg class="overlay-svg" viewBox="0 0 943 1027" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <ellipse class="ripple r1" cx="419" cy="625" rx="48" ry="14"/>
+        <ellipse class="ripple r2" cx="419" cy="625" rx="48" ry="14"/>
+        <g class="sparkle s1" transform="translate(76,292)">
+          <path d="M0 -12 L0 12 M-12 0 L12 0" stroke="#1F1B19" stroke-width="2.6" stroke-linecap="round"/>
+        </g>
+        <g class="sparkle s2" transform="translate(796,672)">
+          <path d="M0 -9 L0 9 M-9 0 L9 0" stroke="#1F1B19" stroke-width="2.2" stroke-linecap="round"/>
+        </g>
+        <g class="sparkle s3" transform="translate(41,747)">
+          <circle r="5" fill="#1F1B19"/>
+        </g>
+        <g class="heart-pulse">
+          <path d="M679 356 Q671 340 657 344 Q643 348 645 364 Q647 380 679 400 Q711 380 713 364 Q715 348 701 344 Q687 340 679 356 Z"
+                fill="none" stroke="#1F1B19" stroke-width="2.6"/>
+        </g>
+      </svg>
+    </div>
+    <p class="note-text">
+      For one afternoon, I'll be living my dream of running a tiny café
+      that loses 10k a month. Come stop by during opening hours for
+      handcrafted, hand-whisked matcha drinks and homemade treats.
+    </p>
+    <p class="note-signoff">Can't wait to see you there,<br><span class="note-name">Iris</span></p>
+  </section>
+
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 200 24" class="divider-svg"><path d="M2 12 C 40 22, 60 2, 100 12 S 160 22, 198 12" /></svg>
+  </div>
+
+  <!-- MENU -->
+  <section class="menu">
+    <p class="section-eyebrow">The Menu</p>
+    <h2 class="section-title">What's Pouring</h2>
+    <p class="menu-intro">Serving Marukyu Koyamaen Matcha from Uji, Kyoto.<br>Also available with Hojicha from Paragon Tea Room instead.</p>
+
+    <ul class="menu-list">
+      <li class="menu-item">
+        <div class="menu-item-row">
+          <span class="menu-item-name">Strawberry Matcha</span>
+          <span class="menu-item-price">&mdash;</span>
+        </div>
+        <p class="menu-item-desc">Strawberry purée, milk of choice, ceremonial matcha, strawberry cold foam</p>
+      </li>
+      <li class="menu-item">
+        <div class="menu-item-row">
+          <span class="menu-item-name">Banana Bread Matcha</span>
+          <span class="menu-item-price">&mdash;</span>
+        </div>
+        <p class="menu-item-desc">Housemade banana bread syrup, milk of choice, ceremonial matcha, vanilla bean cold foam</p>
+      </li>
+      <li class="menu-item">
+        <div class="menu-item-row">
+          <span class="menu-item-name">Iris' Birthday Matcha</span>
+          <span class="menu-item-price">&mdash;</span>
+        </div>
+        <p class="menu-item-desc">Ceremonial matcha, milk of choice, vanilla bean cold foam, sprinkles</p>
+      </li>
+      <li class="menu-item">
+        <div class="menu-item-row">
+          <span class="menu-item-name">Classic Matcha Latte</span>
+          <span class="menu-item-price">&mdash;</span>
+        </div>
+        <p class="menu-item-desc">Ceremonial matcha and milk of choice</p>
+      </li>
+    </ul>
+
+    <p class="menu-footnote">plus a lil something sweet, a lil something savoury on the side...</p>
+  </section>
+
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 200 24" class="divider-svg"><path d="M2 12 C 40 2, 60 22, 100 12 S 160 2, 198 12" /></svg>
+  </div>
+
+  <!-- RSVP -->
+  <section id="rsvp" class="rsvp">
+    <p class="section-eyebrow">Reserve a Seat</p>
+    <h2 class="section-title">RSVP</h2>
+    <p class="rsvp-sub">Ngl I need to order the right amount of cups sooo please let me know you're coming by July 19th!</p>
+
+    <form class="rsvp-form" id="rsvpForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <label class="field">
+        <span class="field-label">Your name</span>
+        <input type="text" name="name" required>
+      </label>
+
+      <label class="field">
+        <span class="field-label">Will you be joining?</span>
+        <select name="attending" required>
+          <option value="" disabled selected>Choose one</option>
+          <option value="yes">Yes, I'll be there</option>
+          <option value="no">Sadly, can't make it</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span class="field-label">Will you be bringing your partner?</span>
+        <select name="attending" required>
+          <option value="" disabled selected>Choose one</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span class="field-label">Anything you can't eat?</span>
+        <input type="text" name="dietary" placeholder="allergies?">
+      </label>
+
+      <button type="submit" class="rsvp-button">Send RSVP</button>
+      <p class="rsvp-success" id="rsvpSuccess">Got it &mdash; can't wait to see you! &#9825;</p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <img src="assets/logo.png" alt="Iris' Matcha Bar" class="footer-logo">
+    <p class="footer-text">one afternoon only</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
