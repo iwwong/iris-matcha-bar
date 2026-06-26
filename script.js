@@ -4,7 +4,7 @@
 
 // ---- CONFIG ----
 // Change this to whatever password you want guests to use.
-const SITE_PASSWORD = "opensesame";
+const SITE_PASSWORD = "ilovematcha";
 
 // ---- PASSWORD GATE ----
 const gate = document.getElementById("gate");
