@@ -19,11 +19,11 @@
   </div>
 
   <div class="gate-card">
-    <div class="gate-stamp">est. for one day only</div>
+    <div class="gate-stamp">Iris' Matcha Bar</div>
 
     <img src="assets/matcha.gif" alt="" class="gate-illustration" aria-hidden="true">
 
-    <h1 class="gate-title">Knock knock</h1>
+    <h1 class="gate-title">Welcome!</h1>
     <p class="gate-sub">This café is open by invitation.<br>Enter the password from your invite to come in.</p>
 
     <form id="gateForm" class="gate-form" autocomplete="off">
@@ -68,7 +68,7 @@
       </div>
       <div class="hero-meta-row">
         <span class="hero-meta-label">Parking</span>
-        <span class="hero-meta-value">Free street parking on University Crescent.<br><span class="hero-meta-note"> I have 2 visitor passes for underground parking &mdash; first come, first served. If parking underground, building entrance is the door between the 2 gates.</span></span>
+        <span class="hero-meta-value">Free street parking on University Crescent.<br><span class="hero-meta-note"> I have 2 visitor passes for underground parking located between 9080 and 9060 University Crescent &mdash; first come, first served. If parking underground, drive down a level and the building entrance is the door between the 2 gates.</span></span>
       </div>
     </div>
 
@@ -108,7 +108,7 @@
     <p class="note-text">
       For one afternoon, I'll be living my dream of running a tiny café
       that loses 10k a month. Come stop by during opening hours for
-      handcrafted, hand-whisked matcha drinks and homemade treats.
+      handcrafted, hand-whisked matcha drinks and homemade treats, made by me :)
     </p>
     <p class="note-signoff">Can't wait to see you there,<br><span class="note-name">Iris</span></p>
   </section>
@@ -129,32 +129,32 @@
           <span class="menu-item-name">Strawberry Matcha</span>
           <span class="menu-item-price">&mdash;</span>
         </div>
-        <p class="menu-item-desc">Strawberry purée, milk of choice, ceremonial matcha, strawberry cold foam</p>
+        <p class="menu-item-desc">Strawberry purée, milk (reg or oat), ceremonial matcha, strawberry cold foam</p>
       </li>
       <li class="menu-item">
         <div class="menu-item-row">
           <span class="menu-item-name">Banana Bread Matcha</span>
           <span class="menu-item-price">&mdash;</span>
         </div>
-        <p class="menu-item-desc">Housemade banana bread syrup, milk of choice, ceremonial matcha, vanilla bean cold foam</p>
+        <p class="menu-item-desc">Housemade banana bread syrup, milk (reg or oat), ceremonial matcha, vanilla bean cold foam</p>
       </li>
       <li class="menu-item">
         <div class="menu-item-row">
           <span class="menu-item-name">Iris' Birthday Matcha</span>
           <span class="menu-item-price">&mdash;</span>
         </div>
-        <p class="menu-item-desc">Ceremonial matcha, milk of choice, vanilla bean cold foam, sprinkles</p>
+        <p class="menu-item-desc">Ceremonial matcha, (reg or oat), vanilla bean cold foam, sprinkles</p>
       </li>
       <li class="menu-item">
         <div class="menu-item-row">
           <span class="menu-item-name">Classic Matcha Latte</span>
           <span class="menu-item-price">&mdash;</span>
         </div>
-        <p class="menu-item-desc">Ceremonial matcha and milk of choice</p>
+        <p class="menu-item-desc">Ceremonial matcha and milk (reg or oat)</p>
       </li>
     </ul>
 
-    <p class="menu-footnote">plus a lil something sweet, a lil something savoury on the side...</p>
+    <p class="menu-footnote">plus a lil something sweet, a lil something savoury on the side...<br> drinks above may change due to me constantly watching home cafe inspo</p>
   </section>
 
   <div class="divider" aria-hidden="true">
@@ -163,7 +163,7 @@
 
   <!-- RSVP -->
   <section id="rsvp" class="rsvp">
-    <p class="section-eyebrow">Reserve a Seat</p>
+    <p class="section-eyebrow">Your cup is waiting</p>
     <h2 class="section-title">RSVP</h2>
     <p class="rsvp-sub">Ngl I need to order the right amount of cups sooo please let me know you're coming by July 19th!</p>
 
@@ -184,10 +184,20 @@
 
       <label class="field">
         <span class="field-label">Will you be bringing your partner?</span>
-        <select name="attending" required>
+        <select name="bringing_partner" required>
           <option value="" disabled selected>Choose one</option>
           <option value="yes">Yes</option>
           <option value="no">No</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span class="field-label">Down for dinner afterwards? Details TBD</span>
+        <select name="dinner_after" required>
+          <option value="" disabled selected>Choose one</option>
+          <option value="yes">Yes, I'm in</option>
+          <option value="maybe">Maybe, keep me posted</option>
+          <option value="no">Can't, matcha only for me</option>
         </select>
       </label>
 
